@@ -1,0 +1,19 @@
+{
+  "name": "webdriverio-cucumber-chrome-headless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/devside/cucumber-chrome-headless-boilerplate",
+  "author": "DevSide",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.5.1",
+    "babel-register": "^6.24.1",
+    "wdio-chromedriver-service": "^0.0.1",
+    "wdio-cucumber-framework": "^0.3.1",
+    "wdio-spec-reporter": "^0.1.0",
+    "webdriverio": "^4.8.0"
+  },
+  "scripts": {
+    "e2e": "wdio e2e/wdio.config.js"
+  }
+}
