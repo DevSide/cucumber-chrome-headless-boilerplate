@@ -18,7 +18,7 @@ exports.config = {
     },
   }],
   sync: true,
-  logLevel: 'info',
+  logLevel: 'error',
   coloredLogs: true,
   screenshotPath: 'e2e/screenshots',
   baseUrl: 'http://www.google.com',

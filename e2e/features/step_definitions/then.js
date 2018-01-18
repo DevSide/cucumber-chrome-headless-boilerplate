@@ -1,5 +1,6 @@
+import { defineSupportCode } from 'cucumber';
 import title from '../../support/title';
 
-export default function () {
-  this.Given(/^I expect the title to be "([^"]*)?"$/, title);
-}
+defineSupportCode(({ Then }) => {
+  Then(/^I expect the title to be "([^"]*)?"$/, title);
+});
