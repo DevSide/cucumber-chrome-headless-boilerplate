@@ -5,7 +5,7 @@ exports.config = {
   specs: [
     'e2e/features/**/*.feature',
   ],
-  port: '9515',
+  port: 9515,
   path: '/',
   capabilities: [{
     browserName: 'chrome',
@@ -33,7 +33,7 @@ exports.config = {
     ],
     backtrace: false,
     compiler: [
-      'js:babel-register',
+      'es6:@babel/register',
     ],
     dryRun: false,
     failFast: false,
