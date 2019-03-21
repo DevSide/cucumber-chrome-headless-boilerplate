@@ -28,8 +28,7 @@ exports.config = {
   reporters: ['spec'],
   cucumberOpts: {
     require: [
-      'e2e/features/step_definitions/given.js',
-      'e2e/features/step_definitions/then.js',
+      'e2e/features/step_definitions/**/*.js',
     ],
     backtrace: false,
     compiler: [
