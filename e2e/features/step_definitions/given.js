@@ -1,6 +1,4 @@
-import { defineSupportCode } from 'cucumber';
+import { Given } from 'cucumber';
 import visit from '../../support/visit';
 
-defineSupportCode(({ Given }) => {
-  Given(/^I visit "([^"]*)?"$/, visit);
-});
+Given(/^I visit "([^"]*)?"$/, visit);
