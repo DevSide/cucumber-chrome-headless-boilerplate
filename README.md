@@ -4,7 +4,7 @@ Very light boilerplate project to run Cucumber scenarios on Chrome headless usin
 Chrome version >= 58 installed on the machine (Linux or MacOS only)
 
 ### Scripts
-Run the test with `yarn e2e` or `npm run e2e`
+Run the test with `yarn test` or `npm run test`
 
 
 

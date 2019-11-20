@@ -3,7 +3,7 @@
  */
 exports.config = {
   specs: [
-    'e2e/features/**/*.feature',
+    'test/features/**/*.feature',
   ],
   port: 9515,
   path: '/',
@@ -20,15 +20,15 @@ exports.config = {
   sync: true,
   logLevel: 'error',
   coloredLogs: true,
-  screenshotPath: 'e2e/screenshots',
-  baseUrl: 'http://www.google.com',
+  screenshotPath: 'test/screenshots',
+  baseUrl: 'https://github.com/DevSide/cucumber-chrome-headless-boilerplate',
   waitforTimeout: 10000,
   services: ['chromedriver'],
   framework: 'cucumber',
   reporters: ['spec'],
   cucumberOpts: {
     require: [
-      'e2e/features/step_definitions/**/*.js',
+      'test/features/step_definitions/**/*.js',
     ],
     requireModule: [
       () => require(`@babel/register`)({

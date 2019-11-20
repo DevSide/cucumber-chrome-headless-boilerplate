@@ -19,6 +19,6 @@
     "webdriverio": "5.16.7"
   },
   "scripts": {
-    "e2e": "wdio run e2e/wdio.config.js"
+    "test": "wdio test/wdio.config.js"
   }
 }
