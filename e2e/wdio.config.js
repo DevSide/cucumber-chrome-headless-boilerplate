@@ -9,7 +9,7 @@ exports.config = {
   path: '/',
   capabilities: [{
     browserName: 'chrome',
-    chromeOptions: {
+    "goog:chromeOptions": {
       args: [
         'headless',
         'disable-gpu',
@@ -30,11 +30,21 @@ exports.config = {
     require: [
       'e2e/features/step_definitions/**/*.js',
     ],
-    backtrace: false,
-    compiler: [
-      'es6:@babel/register',
+    requireModule: [
+      () => require(`@babel/register`)({
+        presets: [
+          [
+            `@babel/preset-env`,
+            {
+              targets: {
+                node: `current`,
+              },
+            },
+          ],
+        ],
+      })
     ],
-    dryRun: false,
+    backtrace: false,
     failFast: false,
     format: ['pretty'],
     colors: true,
